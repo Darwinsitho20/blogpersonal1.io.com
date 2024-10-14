@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.elestudiante.com.co/wp-content/uploads/2019/06/carrera-universitaria-ingenieria-de-sistemas.jpg'); /* Cambia esta ruta por la de tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: black; /* Cambia el color del texto a negro */
+        }
+
+        .container {
+            margin-left: 10%;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            margin-bottom: 10px;
+            font-size: 1.2em; /* Tamaño de fuente adaptable */
+        }
+
+        .button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #28a745; /* Color verde */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .container {
+                margin-left: 5%; /* Reduce el margen en pantallas más pequeñas */
+            }
+
+            .title {
+                font-size: 2em; /* Ajusta el tamaño del título */
+            }
+
+            .text {
+                font-size: 1em; /* Ajusta el tamaño del texto */
+            }
+
+            .button {
+                padding: 8px 15px; /* Reduce el padding del botón */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.5em; /* Ajusta aún más el tamaño del título */
+            }
+
+            .text {
+                font-size: 0.9em; /* Ajusta aún más el tamaño del texto */
+            }
+
+            .button {
+                padding: 6px 12px; /* Reduce aún más el padding del botón */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bienvenido a mi Blog Personal</h1>
+        <p class="text">Aquí compartiré mis pensamientos, proyectos y experiencias.</p>
+        <p class="text">Espero que encuentres inspiración en mis publicaciones.</p>
+        <p class="text">¡Gracias por visitar!</p>
+    </div>
+    <a href="proyectospersonales.html" class="button">Ver Proyectos</a>
+</body>
+</html>
